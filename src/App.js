@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 
+
 //components
-import StoryDisplayFront from './StoryDisplayFront'
+import StoryContainer from './containers/StoryContainer'
 
 //
 
@@ -25,27 +26,12 @@ import StoryDisplayFront from './StoryDisplayFront'
 
 class App extends React.Component {
 
-  state:{
-    data:[]
-  }
-
-
-  componentDidMount(){
-    const url = 'https://api.nytimes.com/svc/news/v3/content/nyt/all.json?limit=10&api-key=W01gIBZNA12SAoUjGQ5Tvv9moSjSGshj'
-    fetch(url)
-      .then(results =>results.json())
-      .then(data => {
-        this.setState({data:data})
-        console.table(data.results)
-    })
-
-  }
 
 
   render() {
     return (
       <div className="App">
-        <StoryDisplayFront/>
+        <StoryContainer />
       </div>
     );
   }//end of render
