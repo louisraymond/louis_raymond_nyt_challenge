@@ -21,7 +21,6 @@ getPhoto = (multimedia) => {
 
           array.push(string)
         }
-        console.log(array)
       })
       return (<img src= {array[0]}/>)
 
