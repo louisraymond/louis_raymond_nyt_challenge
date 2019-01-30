@@ -4,16 +4,16 @@ import StoryDisplayFront from '../StoryDisplayFront'
 class StoryContainer extends React.Component{
 
   state = {
-    stories:{results:[]}
+    stories:[]
   }
 
   componentDidMount(){
-    const url = 'https://api.nytimes.com/svc/news/v3/content/nyt/all.json?limit=10&api-key=W01gIBZNA12SAoUjGQ5Tvv9moSjSGshj'
+    const url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=source:(%22The%20New%20York%20Times%22)&sort=newest&api-key=W01gIBZNA12SAoUjGQ5Tvv9moSjSGshj'
     fetch(url)
       .then(results =>results.json())
       .then(data => {
-        this.setState({stories:data})
-        console.table(this.state.stories.results)
+        this.setState({stories:data.response.docs})
+        console.table(this.state.stories)
     })
   }
 
@@ -25,7 +25,7 @@ class StoryContainer extends React.Component{
   render(){
     return(
       <div>
-        {this.storyRender(this.state.stories.results)}
+        {this.storyRender(this.state.stories)}
       </div>)
   }
 }
