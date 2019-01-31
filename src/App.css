@@ -29,4 +29,149 @@
   to {
     transform: rotate(360deg);
   }
+
 }
+
+.container {
+    max-width: 800px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 395px 395px;
+    grid-row-gap: 20px;
+    grid-template-rows: 300px 300px 300px 300px 300px ;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+.story{
+  display: inline-block;
+  overflow: hidden;
+  align-content: center;
+  color: #516074;
+  border-radius: 10px;
+  border: solid 2px #516074;
+  transition: 200ms ease-in;
+  margin: 5px;
+
+}
+
+.story:hover {
+	color: rgba(255, 255, 255, 0.9);
+  background: #516074;
+}
+
+
+
+a {
+  background-color: #d35c3e ;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+
+input{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #666;
+  font-size: 20px;
+  padding: 4px 7px;
+  outline: 0;
+  margin: 5vw;
+  height: 1.5vw;
+}
+
+
+img{
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 75px;
+}
+
+.story {
+  border-style: solid;
+  border-radius: 10%;
+  align-self: 200;
+  text-align: center;
+
+}
+
+/* Media Queries*/
+
+@media screen and (max-width: 800px){
+  h2{
+    font-size: 2vw;
+  }
+  .container {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 45% 45% ;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+
+  }
+
+  .storyCard{
+    padding: 5%;
+
+
+  }
+
+}
+ /* if the screen is up to 700 pixels in width  */
+
+ @media (max-width: 400px) {
+   .container {
+     display: grid;
+     grid-gap: 3%;
+     grid-template-columns: 80%;
+   }
+
+   .StoryContainer{
+     margin: auto;
+
+   }
+
+   #searchBar{
+
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     font-size: 2vw;
+     padding: 4px 7px;
+     outline: 0;
+     margin: 2vw;
+   }
+
+    button{
+      font-size: 2vw;
+      height: 4vw;
+    }
+
+   a{
+     font-size: 12vw;
+   }
+ }
+
+
+ button {
+   border-radius: 10px;
+   height:4vw;
+   border: 1px solid #ccc;
+   color: rgba(255, 255, 255, 0.9);
+   background: #516074;
+   transition: 200ms
+ }
+
+ button:hover {
+   background-color: crimson;
+   color:white
+ }
+
+ .searchBarDiv{
+   margin: auto;
+ }

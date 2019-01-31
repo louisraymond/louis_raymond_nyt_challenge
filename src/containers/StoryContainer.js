@@ -35,19 +35,27 @@ class StoryContainer extends React.Component{
   }
 
   storyRender(stories){
-    return stories.map( story => <StoryDisplayFront story= {story} />)
+    return stories.map( story => <StoryDisplayFront className='story' story= {story} />)
   }
+
 
 
   render(){
     return(
-      <div>
-          <label >Enter Seach Term: </label>
-          <input type="text" id="filter"
+      <div >
+
+        <div className="searchBarDiv">
+          <img src="https://blueharvest.io/bundle/fd5e4e9ceeeb2801f3f86b21465237bc-327.png"/>
+          <h2>Blue Harvest New York Times App</h2>
+          <input type="text" id="searchBar"
             placeholder='Search Term Here'
             onChange={this.handleChange}/>
-          <button onClick={(e)=> this.fetchRequest(this.state.searchTerm)}/>
-        {this.storyRender(this.state.stories)}
+          <button className='Button' onClick={(e)=> this.fetchRequest(this.state.searchTerm)}>Search News! </button>
+        </div>
+
+        <div className='container'>
+      {this.storyRender(this.state.stories)}
+      </div>
       </div>)
   }
 }

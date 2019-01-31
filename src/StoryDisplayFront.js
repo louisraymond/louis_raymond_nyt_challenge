@@ -32,7 +32,7 @@ getPhoto = (multimedia) => {
 TitleOrInfo = (isClicked) => {
   if (isClicked === true){
     return (
-      <div onClick={this.handleClick}>
+      <div id='storyCard' onClick={this.handleClick}>
         <p>{this.props.story.snippet}</p>
         <a href={this.props.story.web_url}>Click Here To Read The Story!</a>
 
@@ -41,7 +41,7 @@ TitleOrInfo = (isClicked) => {
 
   }else{
     return (
-      <div onClick={this.handleClick}>
+      <div id='storyCard' onClick={this.handleClick}>
         <h2>{this.props.story.headline.main} </h2>
         {this.getPhoto(this.props.story.multimedia)}
       </div>)
@@ -51,7 +51,7 @@ TitleOrInfo = (isClicked) => {
 
 render () {
     return(
-      <div>
+      <div className='story'>
       {this.TitleOrInfo(this.state.isClicked)}
       </div>
     )
