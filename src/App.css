@@ -54,6 +54,7 @@
   border: solid 2px #516074;
   transition: 200ms ease-in;
   margin: 5px;
+  position:relative
 
 }
 
@@ -68,8 +69,8 @@ a {
   background-color: #d35c3e ;
   color: white;
   padding: 1em 1.5em;
-  text-decoration: none;
   text-transform: uppercase;
+  font-size: 2vw;
 
 }
 
@@ -104,7 +105,22 @@ img{
 
 /* Media Queries*/
 
+@media screen and (min-width: 400px){
+
+a{ position: absolute ;
+  bottom: 0%;
+  left: 20%;
+  border-radius: 100% ;
+  bottom: 2vw;
+  right: 20%;
+  margin: auto;
+ }
+
+}
+
+
 @media screen and (max-width: 800px){
+
   h2{
     font-size: 2vw;
   }
@@ -112,7 +128,7 @@ img{
     display: grid;
     grid-gap: 5%;
     grid-template-columns: 45% 45% ;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    /* grid-template-rows: 20% 20% 20% 20% 20%; */
 
   }
 
@@ -129,9 +145,32 @@ img{
    .container {
      display: grid;
      grid-gap: 3%;
-     grid-template-columns: 80%;
+     grid-template-columns: 100%;
+     margin: auto;
+     grid-template-rows: auto;
+
    }
 
+   h2{
+     font-size: 5vw;
+   }
+
+   p{
+    display: none     }
+
+    a{
+
+       padding: none;
+      display:inline-block ;
+      position: relative ;
+      width: 60vw;
+      border-radius: 100% ;
+      margin: auto;
+    }
+
+    .storyCard{
+      text-align: center;
+ }
    .StoryContainer{
      margin: auto;
 

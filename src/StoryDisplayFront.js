@@ -33,9 +33,8 @@ TitleOrInfo = (isClicked) => {
   if (isClicked === true){
     return (
       <div id='storyCard' onClick={this.handleClick}>
-        <p>{this.props.story.snippet}</p>
+        <p className='snippet'>{this.props.story.snippet}</p>
         <a href={this.props.story.web_url}>Click Here To Read The Story!</a>
-
       </div>
     )
 
