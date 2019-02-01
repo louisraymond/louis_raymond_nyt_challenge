@@ -8,8 +8,9 @@ state = {
 
 handleClick = () => {
   this.setState({isClicked:!this.state.isClicked})
-}
+}//end of handleClick
 
+//I built this function to deal with the case that stories might not have a photo in their multimedia package
 getPhoto = (multimedia) => {
   if (multimedia.length === 0){
       return (<img alt='' src ='https://myintuition.org/wp-content/uploads/2018/09/the-new-york-times-logo.jpg'/>)
@@ -27,7 +28,7 @@ getPhoto = (multimedia) => {
     }
 
 
-}
+}//end of getPhoto
 
 TitleOrInfo = (isClicked) => {
   if (isClicked === true){
