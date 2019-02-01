@@ -1,6 +1,6 @@
 import React from 'react';
 
-class StoryDisplayFront extends React.Component {
+class StoryDisplay extends React.Component {
 
 state = {
   isClicked : false
@@ -12,7 +12,7 @@ handleClick = () => {
 
 getPhoto = (multimedia) => {
   if (multimedia.length === 0){
-      return (<img src ='https://myintuition.org/wp-content/uploads/2018/09/the-new-york-times-logo.jpg'/>)
+      return (<img alt='' src ='https://myintuition.org/wp-content/uploads/2018/09/the-new-york-times-logo.jpg'/>)
     }else{
     let array = []
     multimedia.forEach(media =>{
@@ -22,7 +22,7 @@ getPhoto = (multimedia) => {
           array.push(string)
         }
       })
-      return (<img src= {array[0]}/>)
+      return (<img alt='' src= {array[0]}/>)
 
     }
 
@@ -34,9 +34,8 @@ TitleOrInfo = (isClicked) => {
     return (
       <div id='storyCard' onClick={this.handleClick}>
         <p className='snippet'>{this.props.story.snippet}</p>
-        <a href={this.props.story.web_url}>Click Here To Read The Story!</a>
-      </div>
-    )
+        <a rel="noopener noreferrer" target="_blank" href={this.props.story.web_url}>Click Here To Read The Story!</a>
+      </div>)
 
   }else{
     return (
@@ -52,11 +51,10 @@ render () {
     return(
       <div className='story'>
       {this.TitleOrInfo(this.state.isClicked)}
-      </div>
-    )
+      </div>)
   }
 
 }
 
 
-export default StoryDisplayFront
+export default StoryDisplay

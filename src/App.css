@@ -68,9 +68,11 @@
 a {
   background-color: #d35c3e ;
   color: white;
-  padding: 1em 1.5em;
+  padding: 1vw;
   text-transform: uppercase;
   font-size: 2vw;
+  margin: auto;
+
 
 }
 
@@ -132,6 +134,11 @@ a{ position: absolute ;
 
   }
 
+  a{
+    font-size: 4vw;
+    padding:2vw
+  }
+
   .storyCard{
     padding: 5%;
 
@@ -148,7 +155,6 @@ a{ position: absolute ;
      grid-template-columns: 100%;
      margin: auto;
      grid-template-rows: auto;
-
    }
 
    h2{
@@ -166,6 +172,7 @@ a{ position: absolute ;
       width: 60vw;
       border-radius: 100% ;
       margin: auto;
+
     }
 
     .storyCard{
@@ -193,6 +200,8 @@ a{ position: absolute ;
 
    a{
      font-size: 12vw;
+     padding: 1em 1.5em;
+
    }
  }
 

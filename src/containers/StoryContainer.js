@@ -1,5 +1,7 @@
 import React from 'react'
-import StoryDisplayFront from '../StoryDisplayFront'
+
+//components
+import StoryDisplay from '../StoryDisplay'
 
 class StoryContainer extends React.Component{
 
@@ -35,7 +37,7 @@ class StoryContainer extends React.Component{
   }
 
   storyRender(stories){
-    return stories.map( story => <StoryDisplayFront className='story' story= {story} />)
+    return stories.map( story => <StoryDisplay key={story.headline.main} className='story' story= {story} />)
   }
 
 
@@ -45,7 +47,7 @@ class StoryContainer extends React.Component{
       <div >
 
         <div className="searchBarDiv">
-          <img src="https://blueharvest.io/bundle/fd5e4e9ceeeb2801f3f86b21465237bc-327.png"/>
+          <img alt='' src="https://blueharvest.io/bundle/fd5e4e9ceeeb2801f3f86b21465237bc-327.png"/>
           <h2>Blue Harvest New York Times App</h2>
           <input type="text" id="searchBar"
             placeholder='Search Term Here'
