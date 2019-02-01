@@ -16,12 +16,7 @@ class StoryContainer extends React.Component{
    }
 
 
-  submitSearch = () => {
-    console.log(this.state.searchTerm)
-  }
-
   fetchRequest(input=''){
-    console.log(this.state.searchTerm)
     input =`&q=` + input
     const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=source:(%22The%20New%20York%20Times%22)${input}&sort=newest&api-key=W01gIBZNA12SAoUjGQ5Tvv9moSjSGshj`
 

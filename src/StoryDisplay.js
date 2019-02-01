@@ -8,7 +8,7 @@ state = {
 
 handleClick = () => {
   this.setState({isClicked:!this.state.isClicked})
-}//end of handleClick
+}//end of handleClick- this function will make the component "know" if it has been clicked, storing the information in state
 
 //I built this function to deal with the case that stories might not have a photo in their multimedia package
 getPhoto = (multimedia) => {
@@ -45,8 +45,7 @@ TitleOrInfo = (isClicked) => {
         {this.getPhoto(this.props.story.multimedia)}
       </div>)
   }
-
-}
+}//end of TitleOrInfo
 
 render () {
     return(

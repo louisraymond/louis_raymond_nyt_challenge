@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -43,6 +45,17 @@
     margin: 0 auto;
 
 
+}
+
+
+#searchBar{
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 2vw;
+  padding: 4px 7px;
+  outline: 0;
+  margin: 2vw;
 }
 
 .story{
@@ -135,7 +148,7 @@ a{ position: absolute ;
   }
 
   a{
-    font-size: 4vw;
+    font-size: 2vw;
     padding:2vw
   }
 
@@ -156,6 +169,14 @@ a{ position: absolute ;
      margin: auto;
      grid-template-rows: auto;
    }
+
+   #searchBar{
+     font-size: 3vw;
+     padding: 3vw;
+   }
+   button{
+     padding: 2vw;
+     font-size: 2vw;  }
 
    h2{
      font-size: 5vw;
@@ -183,19 +204,10 @@ a{ position: absolute ;
 
    }
 
-   #searchBar{
 
-     border: 1px solid #ccc;
-     border-radius: 10px;
-     font-size: 2vw;
-     padding: 4px 7px;
-     outline: 0;
-     margin: 2vw;
-   }
 
     button{
       font-size: 2vw;
-      height: 4vw;
     }
 
    a{
@@ -212,7 +224,10 @@ a{ position: absolute ;
    border: 1px solid #ccc;
    color: rgba(255, 255, 255, 0.9);
    background: #516074;
-   transition: 200ms
+   transition: 200ms;
+   padding: 4px 7px;
+   outline: 0;
+   margin: 2vw;
  }
 
  button:hover {

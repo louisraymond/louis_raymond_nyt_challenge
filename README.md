@@ -18,7 +18,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 This app fetches the 10 latest stories from the NYT article api. It allows you to search for articles related to a phrase, and is responsive
 
-for a video demo, along with a talk through of some of the code - click here:
+for a video demo, along with a talk through of some of the code - click here: https://youtu.be/abYYei0ja-k
 
 ##Summary of Architectural Choices  
 
