@@ -1,6 +1,7 @@
 {
   "name": "louis_raymond_blue_harvest_challenge",
   "version": "0.1.0",
+  "homepage":".",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.2.1",
