@@ -17,6 +17,6 @@ class App extends React.Component {
       </div>
     );
   }//end of render
-}
+}//end of App
 
 export default App;
