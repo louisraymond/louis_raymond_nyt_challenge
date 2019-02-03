@@ -1,7 +1,9 @@
 
 ## Blue Harvest New York Times App
+To start this app, you can just open the index.html file
+Or you can check out the version deployed on netlify here: https://infallible-tesla-146517.netlify.com/
 
-to boot this project up in development mode run:
+Otherwise, to boot this project up in development mode run:
 
 ### `npm install`
 ### `npm start`

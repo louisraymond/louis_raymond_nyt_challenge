@@ -42,8 +42,7 @@ class StoryContainer extends React.Component{
       <div >
 
         <div className="searchBarDiv">
-          <img alt='' src="https://blueharvest.io/bundle/fd5e4e9ceeeb2801f3f86b21465237bc-327.png"/>
-          <h2>Blue Harvest New York Times App</h2>
+          <h2>Louis Raymond's New York Times App</h2>
           <input type="text" id="searchBar"
             placeholder='Search Term Here'
             onChange={this.handleChange}/>

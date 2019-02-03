@@ -15,15 +15,15 @@ getPhoto = (multimedia) => {
   if (multimedia.length === 0){
       return (<img alt='' src ='https://myintuition.org/wp-content/uploads/2018/09/the-new-york-times-logo.jpg'/>)
     }else{
-    let array = []
+    let temporaryArray = []
     multimedia.forEach(media =>{
-        if (media.type === 'image' && media.subType === 'thumbnail' && array.length <=1){
-          let string = `https://static01.nyt.com/${media.url}`
+        if (media.type === 'image' && media.subType === 'thumbnail' && temporaryArray.length <=1){
+          let temporaryString = `https://static01.nyt.com/${media.url}`
 
-          array.push(string)
+          temporaryArray.push(temporaryString)
         }
       })
-      return (<img alt='' src= {array[0]}/>)
+      return (<img alt='' src= {temporaryArray[0]}/>)
 
     }
 
