@@ -9,7 +9,6 @@ state = {
 handleClick = () => {
   this.setState({isClicked:!this.state.isClicked})
 }//end of handleClick- this function will make the component "know" if it has been clicked, storing the information in state
-//I built this function to deal with the case that stories might not have a photo in their multimedia package
 
 getPhoto = (multimedia) => {
   if (multimedia.length === 0){
@@ -23,7 +22,8 @@ getPhoto = (multimedia) => {
         }
       })
       return (<img alt='' src= {temporaryArray[0]}/>)
-    }
+    }//I built this function to deal with the case that stories might not have a photo in their multimedia package
+
 
 
 }//end of getPhoto- this grabs the thumbnail if one is available, if there isn't one, then it grabs an image of the NYT logo
