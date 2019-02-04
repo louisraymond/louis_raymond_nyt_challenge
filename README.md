@@ -1,5 +1,5 @@
 
-## Blue Harvest New York Times App
+##New York Times App
 To start this app, you can just open the index.html file
 
 ## Other Ways To See This App
