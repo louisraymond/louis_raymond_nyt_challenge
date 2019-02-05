@@ -15,6 +15,11 @@ class StoryContainer extends React.Component{
      this.setState({searchTerm : event.target.value})
    }//This function updates the search term held in state, I used it in the search bar.
 
+  handleSubmit = (e)=> {
+    e.preventDefault()
+    this.fetchRequest(this.state.searchTerm)
+  }
+  //This runs a fetch request when the button is pressed or when the form is otherwise submitted
 
   fetchRequest(input=''){
     input =`&q=` + input
@@ -37,17 +42,18 @@ class StoryContainer extends React.Component{
   }//This maps over the stories we have stored in an array, and returns a StroyDisplay element for each one.
 
 
-
   render(){
     return(
       <div >
 
         <div className="searchBarDiv">
           <h2>Louis Raymond's New York Times App</h2>
+          <form onSubmit={this.handleSubmit}>
           <input type="text" id="searchBar"
             placeholder='Search Term Here'
             onChange={this.handleChange}/>
-          <button className='Button' onClick={(e)=> this.fetchRequest(this.state.searchTerm)}>Search News! </button>
+          </form>
+          <button className='Button' onClick={this.handleSubmit}>Search News! </button>
         </div>
 
         <div className='container'>
