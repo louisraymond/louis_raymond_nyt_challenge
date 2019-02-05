@@ -26,7 +26,9 @@ getPhoto = (multimedia) => {
 
 
 
+
 }//end of getPhoto- this grabs the thumbnail if one is available, if there isn't one, then it grabs an image of the NYT logo
+//I built this function to deal with the case that stories might not have a photo in their multimedia package
 
 TitleOrInfo = (isClicked) => {
   if (isClicked === true){
