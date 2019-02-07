@@ -1,6 +1,6 @@
 
 ## New York Times App
-To start this app, you can just open the index.html file
+To start this app, you can just open the index.html file in the build folder
 
 ## Other Ways To See This App
 Or you can check out the version deployed on netlify here: https://infallible-tesla-146517.netlify.com/
